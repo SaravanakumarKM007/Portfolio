@@ -194,12 +194,12 @@ section{
   z-index:-1;
   background:
     linear-gradient(rgba(248,250,255,.35),rgba(248,250,255,.35)),
-    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/images/Tech Creative Portrait Hero.png") center 5%/cover no-repeat;
+    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/Tech Creative Portrait Hero.png") center 5%/cover no-repeat;
 }
 [data-theme="dark"] .hero::before{
   background:
     linear-gradient(rgba(10,14,34,.6),rgba(10,14,34,.6)),
-    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/images/Tech Creative Portrait Hero.png") center 5%/cover no-repeat;
+    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/Tech Creative Portrait Hero.png") center 5%/cover no-repeat;
 }
 .brush{
     font:400 clamp(3.4rem,14vw,10rem)/1 "Permanent Marker",cursive;
@@ -1079,12 +1079,12 @@ body.lock{overflow:hidden}
   z-index:-1;
   background:
     linear-gradient(rgba(248,250,255,.6),rgba(248,250,255,.6)),
-    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/images/background1.png") center top/cover no-repeat;
+    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/background1.png") center top/cover no-repeat;
 }
 [data-theme="dark"] .skills::before{
   background:
     linear-gradient(rgba(10,14,34,.7),rgba(10,14,34,.7)),
-    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/images/background1.png") center top/cover no-repeat;
+    url("C:/Users/DELL/Downloads/saravanakumar-uiux-portfolio/saravanakumar-uiux-portfolio/background1.png") center top/cover no-repeat;
 }
 
 /*Letter hover*/
