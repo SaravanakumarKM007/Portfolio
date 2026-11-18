@@ -1107,3 +1107,52 @@ body.lock{overflow:hidden}
     font-size:inherit;
     margin:0;animation:none
 }
+
+/* ===== MOBILE FIXES ===== */
+html{overflow-x:hidden}
+@media(max-width:900px){
+  .about-grid,.skills-grid,.contact-grid{grid-template-columns:minmax(0,1fr)}
+  .about-photo,.orbit-wrap,.bars,.form,.links{min-width:0;max-width:100%}
+  .pic{max-width:100%}
+  .pic img{max-width:100%;height:auto;max-height:100%}
+  .tool-chips{justify-content:flex-start}
+}
+@media(max-width:560px){
+  .nav{padding:10px 16px;gap:10px}
+  .logo{font-size:22px}
+  .hero{min-height:100svh;padding-top:90px;justify-content:flex-end;padding-bottom:90px}
+  .hero::before{background-position:center top!important}
+  .brush{font-size:clamp(3.2rem,20vw,5rem)}
+  .intro{font-size:1.1rem;gap:8px}
+  .intro i{display:none}
+  .stars{margin:8px 0}
+  .dots,.float{display:none}
+  .script-title{font-size:2.2rem}
+  .about-photo{height:340px}
+  .skills-grid{gap:28px}
+  .bars{padding:20px}
+  .orbit-wrap{width:min(88vw,320px)}
+  .brush-sm{font-size:3.2rem}
+  .lead{font-size:15px}
+  .card:hover{transform:none}
+  .over{display:none}
+  .modal{padding:10px}
+  .m-body{padding:18px 16px 22px}
+  .foot p{font-size:12px}
+}
+@media(max-width:900px){
+  .about-photo{justify-items:center}
+  .pic{width:100%;max-width:380px}
+  .pic img{width:auto;max-width:100%}
+  .orbit-wrap{overflow:hidden;padding:0}
+}
+@keyframes bobY{50%{transform:translateY(-14px)}}
+.pic,.chip{animation-name:bobY}
+@media(max-width:560px){
+  /* readable hero text on phones */
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:55%;z-index:-1;pointer-events:none;
+    background:linear-gradient(transparent,rgba(248,250,255,.92) 70%)}
+  [data-theme="dark"] .hero::after{background:linear-gradient(transparent,rgba(10,14,34,.92) 70%)}
+  .intro .typed{color:var(--ink)}
+  .skills::before{opacity:.85}
+}
